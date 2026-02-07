@@ -1,125 +1,242 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Ravindra Bhati | iOS Developer</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body class="no__highlights">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ravindra Bhati | Senior iOS Developer</title>
+    <meta
+      name="description"
+      content="Ravindra Bhati - Senior iOS Developer and Swift expert with 8+ years of experience."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="bg-blobs" aria-hidden="true"></div>
 
-<!-- HEADER -->
-<div class="header__button">
-  <div class="header__ham">
-    <span></span><span></span><span></span>
-  </div>
-</div>
-<div class="header__bg"></div>
+    <header class="site-header">
+      <a class="logo" href="#home" aria-label="Go to home">
+        <span class="logo-mark">RB</span>
+        <span class="logo-text">Ravindra Bhati</span>
+      </a>
+      <button
+        class="menu-btn"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="overlay-nav"
+      >
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+      </button>
+    </header>
 
-<nav class="header__nav">
-  <div class="header__nav-item">
-    <span>Menu</span>
-    <ul>
-      <li><a href="#about" class="header__nav-link">About</a></li>
-      <li><a href="#projects" class="header__nav-link">Projects</a></li>
-      <li><a href="#contact" class="header__nav-link">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="hero__info">
-    <img src="img/profile.jpg" class="hero__info-img" />
-    <div class="hero__text">
-      <h1>Ravindra Bhati</h1>
-      <p>Senior iOS Developer • Swift Expert • 8+ Years Experience</p>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="about">
-  <div class="about__sidebar">
-    <img src="img/profile.jpg" class="about__profile" />
-    <span>Ravindra Bhati</span>
-    <button class="button button-dark send-email">
-      Show Email
-    </button>
-    <div class="email-address"></div>
-  </div>
-
-  <div class="about__content">
-    <h1>About Me</h1>
-    <p>
-      Results-driven iOS Developer with 8+ years of experience building
-      high-performance mobile applications for Fortune 500 companies like
-      Apple, Backbase, Capgemini, and Wipro.
-    </p>
-    <p>
-      Expert in Swift, SwiftUI, UIKit, MVVM, Clean Architecture and modern iOS
-      frameworks. I have delivered enterprise-scale applications serving
-      1M+ users with 99.9% uptime.
-    </p>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="showcase">
-  <h2 class="showcase__title">Projects</h2>
-
-  <div class="showcase__item">
-    <div class="showcase__item-video">
-      <video autoplay muted loop>
-        <source src="videos/banking.mp4" type="video/mp4" />
-      </video>
-    </div>
-
-    <div class="showcase__item-info">
-      <div class="showcase__item-info-text">
-        <h3>Digital Banking App</h3>
-        <p>
-          Built iOS banking applications for MASRAF Bank & BDO Bank using Swift
-          and SwiftUI, serving 1M+ users with biometric authentication and
-          real-time payments.
-        </p>
-        <span>Swift</span><span>SwiftUI</span><span>MVVM</span>
+    <nav id="overlay-nav" class="overlay-nav" aria-hidden="true">
+      <div class="overlay-inner">
+        <div class="overlay-links">
+          <a href="#home" class="overlay-link">Home</a>
+          <a href="#about" class="overlay-link">About</a>
+          <a href="#projects" class="overlay-link">Projects</a>
+          <a href="#contact" class="overlay-link">Contact</a>
+        </div>
+        <div class="overlay-meta">
+          <p>Senior iOS Developer - Swift Expert</p>
+          <p>Bangalore, India</p>
+        </div>
+        <div class="overlay-cta">
+          <a class="btn primary" href="mailto:bhati.ravindra919@gmail.com">Email</a>
+          <a
+            class="btn ghost"
+            href="https://www.linkedin.com/in/ravindra-bhati-454548126/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
+        </div>
       </div>
-    </div>
-  </div>
+    </nav>
 
-  <div class="showcase__item">
-    <div class="showcase__item-video">
-      <video autoplay muted loop>
-        <source src="videos/education.mp4" type="video/mp4" />
-      </video>
-    </div>
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow reveal" style="--delay: 0.05s">Senior iOS Developer</p>
+            <h1 class="reveal" style="--delay: 0.12s">
+              Ravindra Bhati
+            </h1>
+            <p class="tagline reveal" style="--delay: 0.2s">
+              Results-driven iOS Developer with 8+ years of experience building
+              high-performance apps for Apple, Backbase, Capgemini, and Wipro.
+              Expert in Swift, SwiftUI, UIKit, MVVM, and Clean Architecture.
+            </p>
+            <div class="hero-actions reveal" style="--delay: 0.28s">
+              <a class="btn primary" href="#projects">View Projects</a>
+              <a class="btn ghost" href="mailto:bhati.ravindra919@gmail.com">Contact</a>
+            </div>
+            <div class="hero-stats reveal" style="--delay: 0.36s">
+              <div class="stat">
+                <span class="stat-value">8+ years</span>
+                <span class="stat-label">iOS experience</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">1M+ users</span>
+                <span class="stat-label">apps delivered</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">99.9% uptime</span>
+                <span class="stat-label">production reliability</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="avatar reveal" style="--delay: 0.18s">
+              <div class="avatar-ring"></div>
+              <div class="avatar-core">
+                <span>RB</span>
+              </div>
+            </div>
+            <p class="location reveal" style="--delay: 0.3s">Bangalore, India</p>
+          </div>
+        </div>
+      </section>
 
-    <div class="showcase__item-info">
-      <div class="showcase__item-info-text">
-        <h3>ClassMonitor (EdTech App)</h3>
-        <p>
-          Award-winning education app with 200K+ users in 25+ countries.
-          Implemented video streaming, AI chatbot and push notifications.
-        </p>
-        <span>Swift</span><span>Firebase</span><span>AVFoundation</span>
-      </div>
-    </div>
-  </div>
+      <section id="about" class="about">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-label">About</p>
+            <h2>Crafting iOS experiences that scale.</h2>
+          </div>
+          <div class="about-grid">
+            <p class="about-text">
+              I design and build iOS applications that feel effortless and stay
+              reliable at scale. My focus is clean architecture, maintainability,
+              and performance, from onboarding to enterprise-grade tooling.
+              I thrive in product teams that value quality and user empathy.
+            </p>
+            <div class="skills">
+              <span class="chip">Swift</span>
+              <span class="chip">SwiftUI</span>
+              <span class="chip">UIKit</span>
+              <span class="chip">MVVM</span>
+              <span class="chip">Clean Architecture</span>
+              <span class="chip">REST APIs</span>
+              <span class="chip">GraphQL</span>
+              <span class="chip">CoreData</span>
+              <span class="chip">Firebase</span>
+              <span class="chip">XCTest</span>
+              <span class="chip">CI/CD</span>
+              <span class="chip">Fastlane</span>
+              <span class="chip">Git</span>
+              <span class="chip">CocoaPods</span>
+              <span class="chip">SPM</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-</section>
+      <section id="projects" class="projects">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-label">Projects</p>
+            <h2>Selected work</h2>
+          </div>
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-header">
+                <h3>Digital Banking App</h3>
+                <p class="project-meta">MASRAF Bank + BDO Bank</p>
+              </div>
+              <p class="project-desc">
+                Built iOS banking apps serving 1M+ users with secure authentication
+                and seamless UX across mobile devices.
+              </p>
+              <ul class="project-highlights">
+                <li>1M+ active users</li>
+                <li>Biometric authentication</li>
+                <li>Swift, SwiftUI, MVVM</li>
+              </ul>
+              <div class="project-tags">
+                <span>Swift</span>
+                <span>SwiftUI</span>
+                <span>MVVM</span>
+                <span>Banking</span>
+              </div>
+            </article>
 
-<!-- CONTACT -->
-<section id="contact" class="single__page">
-  <h1>Contact</h1>
-  <p>Let’s build something amazing together 🚀</p>
-  <p>
-    LinkedIn:
-    <a href="https://www.linkedin.com/in/ravindrabhati-454548126/" target="_blank">
-      linkedin.com/in/ravindrabhati
-    </a>
-  </p>
-</section>
+            <article class="project-card">
+              <div class="project-header">
+                <h3>ClassMonitor (EdTech App)</h3>
+                <p class="project-meta">Global learning platform</p>
+              </div>
+              <p class="project-desc">
+                Delivered an education app used in 25+ countries with video streaming,
+                AI chatbot support, and real-time notifications.
+              </p>
+              <ul class="project-highlights">
+                <li>200K+ users</li>
+                <li>Video streaming + AI chatbot</li>
+                <li>Swift, Firebase, AVFoundation</li>
+              </ul>
+              <div class="project-tags">
+                <span>Swift</span>
+                <span>Firebase</span>
+                <span>AVFoundation</span>
+                <span>EdTech</span>
+              </div>
+            </article>
 
-<script src="script.js"></script>
-</body>
+            <article class="project-card">
+              <div class="project-header">
+                <h3>Apple Retail Enterprise App</h3>
+                <p class="project-meta">Retail operations tooling</p>
+              </div>
+              <p class="project-desc">
+                Enterprise app used across 500+ Apple Store locations for inventory
+                management and 3D product visualization.
+              </p>
+              <ul class="project-highlights">
+                <li>500+ store deployments</li>
+                <li>Inventory management</li>
+                <li>Swift, SceneKit, CoreData</li>
+              </ul>
+              <div class="project-tags">
+                <span>Swift</span>
+                <span>SceneKit</span>
+                <span>CoreData</span>
+                <span>Enterprise</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container contact-card">
+          <div>
+            <p class="section-label">Contact</p>
+            <h2>Let's build something exceptional.</h2>
+          </div>
+          <div class="contact-actions">
+            <a class="btn primary" href="mailto:bhati.ravindra919@gmail.com">
+              bhati.ravindra919@gmail.com
+            </a>
+            <a
+              class="btn ghost"
+              href="https://www.linkedin.com/in/ravindra-bhati-454548126/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Ravindra Bhati. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
