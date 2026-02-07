@@ -1,55 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ravindra Bhati • Portfolio</title>
-  <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: #f9f9f9; color: #333; }
-    header { text-align: center; padding: 60px 20px; background: #222; color: #fff; }
-    header h1 { margin: 0; font-size: 3em; }
-    header p { font-size: 1.2em; color: #ddd; }
-    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
-    .projects { display: grid; grid-gap: 20px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
-    .project-card { border: 1px solid #ddd; padding: 20px; border-radius: 8px; background: #fff; }
-    .project-card h3 { margin-top: 0; }
-    footer { text-align: center; padding: 20px; font-size: 0.9em; color: #666; }
-    a { text-decoration: none; color: #0077cc; }
-    a:hover { text-decoration: underline; }
-  </style>
+  <meta charset="UTF-8" />
+  <title>Ravindra Bhati | iOS Developer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="no__highlights">
 
-<header>
-  <h1>Ravindra Bhati</h1>
-  <p>Web Developer & Learner</p>
-</header>
+<!-- HEADER -->
+<div class="header__button">
+  <div class="header__ham">
+    <span></span><span></span><span></span>
+  </div>
+</div>
+<div class="header__bg"></div>
 
-<section>
-  <h2>About Me</h2>
-  <p>Hello! I’m Ravindra, passionate about building simple and clean web applications. I enjoy learning new technologies and solving real-world problems.</p>
-</section>
+<nav class="header__nav">
+  <div class="header__nav-item">
+    <span>Menu</span>
+    <ul>
+      <li><a href="#about" class="header__nav-link">About</a></li>
+      <li><a href="#projects" class="header__nav-link">Projects</a></li>
+      <li><a href="#contact" class="header__nav-link">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-<section>
-  <h2>Projects</h2>
-  <div class="projects">
-    <div class="project-card">
-      <h3>Project One</h3>
-      <p>Description for project one goes here. Briefly explain what it does and why it’s cool.</p>
-      <p><a href="#">View Code</a></p>
-    </div>
-    <div class="project-card">
-      <h3>Project Two</h3>
-      <p>Description for project two goes here. Keep it short and clear.</p>
-      <p><a href="#">View Code</a></p>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__info">
+    <img src="img/profile.jpg" class="hero__info-img" />
+    <div class="hero__text">
+      <h1>Ravindra Bhati</h1>
+      <p>Senior iOS Developer • Swift Expert • 8+ Years Experience</p>
     </div>
   </div>
 </section>
 
-<footer>
-  <p>Connect with me: <a href="https://github.com/RavindraBhati7" target="_blank">GitHub</a> • <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></p>
-  <p>&copy; 2026 Ravindra Bhati</p>
-</footer>
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="about__sidebar">
+    <img src="img/profile.jpg" class="about__profile" />
+    <span>Ravindra Bhati</span>
+    <button class="button button-dark send-email">
+      Show Email
+    </button>
+    <div class="email-address"></div>
+  </div>
 
+  <div class="about__content">
+    <h1>About Me</h1>
+    <p>
+      Results-driven iOS Developer with 8+ years of experience building
+      high-performance mobile applications for Fortune 500 companies like
+      Apple, Backbase, Capgemini, and Wipro.
+    </p>
+    <p>
+      Expert in Swift, SwiftUI, UIKit, MVVM, Clean Architecture and modern iOS
+      frameworks. I have delivered enterprise-scale applications serving
+      1M+ users with 99.9% uptime.
+    </p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="showcase">
+  <h2 class="showcase__title">Projects</h2>
+
+  <div class="showcase__item">
+    <div class="showcase__item-video">
+      <video autoplay muted loop>
+        <source src="videos/banking.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="showcase__item-info">
+      <div class="showcase__item-info-text">
+        <h3>Digital Banking App</h3>
+        <p>
+          Built iOS banking applications for MASRAF Bank & BDO Bank using Swift
+          and SwiftUI, serving 1M+ users with biometric authentication and
+          real-time payments.
+        </p>
+        <span>Swift</span><span>SwiftUI</span><span>MVVM</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="showcase__item">
+    <div class="showcase__item-video">
+      <video autoplay muted loop>
+        <source src="videos/education.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="showcase__item-info">
+      <div class="showcase__item-info-text">
+        <h3>ClassMonitor (EdTech App)</h3>
+        <p>
+          Award-winning education app with 200K+ users in 25+ countries.
+          Implemented video streaming, AI chatbot and push notifications.
+        </p>
+        <span>Swift</span><span>Firebase</span><span>AVFoundation</span>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="single__page">
+  <h1>Contact</h1>
+  <p>Let’s build something amazing together 🚀</p>
+  <p>
+    LinkedIn:
+    <a href="https://www.linkedin.com/in/ravindrabhati-454548126/" target="_blank">
+      linkedin.com/in/ravindrabhati
+    </a>
+  </p>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
