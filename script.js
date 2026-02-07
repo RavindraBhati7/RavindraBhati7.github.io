@@ -1,14 +1,29 @@
-const sendEmail = document.querySelectorAll(".send-email");
-const emailAddress = document.querySelectorAll(".email-address");
+const body = document.body;
+const menuBtn = document.querySelector(".menu-btn");
+const overlayNav = document.querySelector(".overlay-nav");
+const overlayLinks = document.querySelectorAll(".overlay-link");
 
-for (let i = 0; i < sendEmail.length; i++) {
-  sendEmail[i].addEventListener("click", function () {
-    const part1 = "bhati.ravindra919";
-    const part2 = Math.pow(2, 6);
-    const part3 = String.fromCharCode(part2);
-    const part4 = "gmail.com";
-    const address = part1 + part3 + part4;
-    emailAddress[i].textContent = address;
-    emailAddress[i].style.cssText = "opacity: 1;";
-  });
-}
+const setMenuState = (isOpen) => {
+  body.classList.toggle("nav-open", isOpen);
+  menuBtn.setAttribute("aria-expanded", String(isOpen));
+  overlayNav.setAttribute("aria-hidden", String(!isOpen));
+};
+
+menuBtn.addEventListener("click", () => {
+  const isOpen = body.classList.contains("nav-open");
+  setMenuState(!isOpen);
+});
+
+overlayLinks.forEach((link) => {
+  link.addEventListener("click", () => setMenuState(false));
+});
+
+window.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    setMenuState(false);
+  }
+});
+
+window.addEventListener("load", () => {
+  body.classList.add("is-ready");
+});
