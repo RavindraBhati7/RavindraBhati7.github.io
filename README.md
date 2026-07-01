@@ -1,4 +1,4 @@
-# Ravindra Bhati — Modernized Portfolio
+# Ravindra Bhati —  Portfolio
 
 This branch modernize-portfolio contains an initial Next.js + TypeScript + Tailwind scaffold and migrated content from the original static site.
 
